@@ -1,0 +1,18 @@
+[versions]
+gcp-bom = "24.0.0"
+jackson = "2.13"
+kotlin = "1.6.0"
+ktor = "1.6.5"
+
+[libraries]
+konfig = {group = "com.natpryce", name = "konfig", version = "1.6.10.0" }
+kotlin-bom = {group = "org.jetbrains.kotlin", name = "kotlin-bom", version.ref = "kotlin" }
+ktor-client-auth-jvm = {group = "io.ktor", name = "ktor-client-auth-jvm", version.ref = "ktor" }
+ktor-client-cio = {group = "io.ktor", name = "ktor-client-cio", version.ref = "ktor" }
+ktor-client-jackson = {group = "io.ktor", name = "ktor-client-jackson", version.ref = "ktor" }
+ktor-client-logging-jvm = {group = "io.ktor", name = "ktor-client-logging-jvm", version.ref = "ktor" }
+ktor-server = {group = "io.ktor", name = "ktor-server", version.ref = "ktor" }
+telegram = {group = "io.github.kotlin-telegram-bot.kotlin-telegram-bot", name = "telegram", version = "6.0.3" }
+
+[bundles]
+ktor-client = ["ktor-client-cio", "ktor-client-jackson"]
