@@ -23,7 +23,7 @@ kotlin {
 }
 
 tasks.register<Download>("download-catalog") {
-    src("https://gitcdn.link/cdn/gtcno/gradle-catalog/main/libs.versions.toml")
+    src("https://raw.githubusercontent.com/gtcno/kotlin-template/main/gradle/libs.versions.toml")
     dest("gradle")
     overwrite(true)
 }
@@ -36,5 +36,4 @@ tasks.test {
 dependencies {
     implementation(libs.ktor.server)
     implementation(libs.bundles.ktor.client)
-//    implementation()
 }
